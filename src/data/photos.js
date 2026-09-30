@@ -33,17 +33,17 @@ export const SERVICE_PHOTOS = {
   "SS (Stainless Steel) Railings": I + "ss-railings.jpg",
   "SS Gates": I + "ss-gates.jpg",
   "SS Doors": I + "ss-doors.jpg",
-  "Steel Structures and Sheds": S + "steel.jpg",
+  "Steel Structures and Sheds": I + "steel-structures.jpg",
   "All Steel Work (Custom)": I + "custom-steel.jpg",
   // Aluminium Windows
-  "Sliding Windows": S + "aluwin.jpg",
+  "Sliding Windows": I + "sliding-windows.jpg",
   "Casement Windows": I + "casement-windows.jpg",
   "Fixed Windows": I + "fixed-windows.jpg",
   "Tilt and Turn Windows": I + "tilt-turn-windows.jpg",
   "Aluminium Window Grills": I + "window-grills-alu.jpg",
   // Aluminium Doors
   "Sliding Doors": I + "sliding-doors.jpg",
-  "Hinged Doors": S + "aludoor.jpg",
+  "Hinged Doors": I + "hinged-doors.jpg",
   "Folding Doors": I + "folding-doors.jpg",
   "Bathroom Doors": I + "bathroom-doors.jpg",
   "Aluminium Partition Doors": I + "partition-doors.jpg",
@@ -56,7 +56,7 @@ export const SERVICE_PHOTOS = {
   "Tempered Glass": I + "tempered-glass.jpg",
   // Shutter Gates
   "Rolling Shutters": I + "rolling-shutters.jpg",
-  "Shop Shutters": S + "shutter.jpg",
+  "Shop Shutters": I + "shop-shutters.jpg",
   "Garage Shutters": I + "garage-shutters.jpg",
   "Automatic Shutters": I + "automatic-shutters.jpg",
   // Wrought Iron Gates
@@ -66,12 +66,12 @@ export const SERVICE_PHOTOS = {
   "Designer Gates": "/images/projects/designer-gate.jpg",
   // Grills
   "Window Grills": I + "window-grills.jpg",
-  "Balcony Grills": S + "grills.jpg",
+  "Balcony Grills": I + "balcony-grills.jpg",
   "Door Grills": I + "door-grills.jpg",
   "Safety Grills": I + "safety-grills.jpg",
   "Decorative Grills": I + "decorative-grills.jpg",
   // All Steel Work
-  "Steel Shelving and Racks": S + "allsteel.jpg",
+  "Steel Shelving and Racks": I + "steel-shelving.jpg",
   "Steel Tables and Furniture": I + "steel-tables.jpg",
   "Steel Tanks": I + "steel-tanks.jpg",
   "Steel Trusses": I + "steel-trusses.jpg",
