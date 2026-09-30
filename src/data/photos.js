@@ -2,6 +2,9 @@
 // Stock photos from Unsplash (see public/images/CREDITS.txt). To use your own photo,
 // put it in public/images/ and change the path here.
 
+// Bump this whenever you replace a photo file, so browsers load the new one instead of an old cached copy.
+export const PHOTO_VERSION = "2026-10-01";
+
 const S = "/images/services/";
 const I = "/images/services/items/";
 
