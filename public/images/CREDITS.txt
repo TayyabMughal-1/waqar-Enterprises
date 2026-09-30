@@ -65,3 +65,4 @@ services/items/hinged-doors.jpg             https://images.unsplash.com/photo-16
 services/items/shop-shutters.jpg            https://images.unsplash.com/photo-1787672357850-fe86ca077f4e
 services/items/balcony-grills.jpg           https://images.unsplash.com/photo-1785632662301-ef997615cd26
 services/items/steel-shelving.jpg           https://images.unsplash.com/photo-1627309366653-2dedc084cdf1
+og-image.jpg                                https://images.unsplash.com/photo-1714504904786-b6732390b206

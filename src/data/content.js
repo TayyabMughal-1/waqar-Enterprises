@@ -75,8 +75,8 @@ export const FAQS = [
 // Site pages shown in the menu: [page id, URL, label].
 // Each page has its own HTML file (e.g. services/index.html) listed in vite.config.js.
 export const NAV_LINKS = [
-  ["home", "/", "Home"],
   ["services", "/services/", "Services"],
+  ["estimator", "/estimator/", "Price Estimate"],
   ["projects", "/projects/", "Projects"],
   ["about", "/about/", "About"],
   ["testimonials", "/testimonials/", "Testimonials"],

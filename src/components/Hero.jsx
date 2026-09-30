@@ -14,7 +14,7 @@ export default function Hero() {
             <span className="dot" /> Free site visit for measurement
           </p>
           <h1 className="anim-up" style={{ animationDelay: "80ms" }}>
-            Gates, grills &amp; glass, <span className="accent">made to measure.</span>
+            Steel gates, grills &amp; glass, <span className="accent">made to measure.</span>
           </h1>
           <p className="hero-lede anim-up" style={{ animationDelay: "160ms" }}>
             We design, fabricate and install iron, steel, aluminium, glass and fiber glass work for homes, shops and
@@ -38,7 +38,7 @@ export default function Hero() {
         </div>
 
         <div className="hero-art anim-fade" aria-hidden="true">
-          <Photo src="/images/hero.jpg" alt="Welder cutting steel box section in the workshop" />
+          <Photo src="/images/hero.jpg" alt="Welder cutting steel box section in the workshop" eager />
           <div className="float-tag">
             <b>Our own workshop</b>
             <span>Cut · Weld · Finish · Install</span>

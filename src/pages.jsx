@@ -1,18 +1,19 @@
 // One component per page. Each page has its own HTML file (see vite.config.js)
 // whose <div id="root" data-page="..."> picks the component below.
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { CONFIG } from "./config";
 import { CATEGORY_BY_KEY } from "./data/services";
 import { whatsappLink } from "./utils/links";
 import { CtaBand, PageHero } from "./components/Layout";
 import Hero from "./components/Hero";
-import Services, { CategoryGrid } from "./components/Services";
+import Services, { CategoryGrid, ServiceDirectory } from "./components/Services";
 import Gallery from "./components/Gallery";
 import Testimonials from "./components/Testimonials";
 import OrderForm from "./components/OrderForm";
 import { About, Audiences, Faq, Process } from "./components/Sections";
 import { ContactCards, FollowUs } from "./components/Contact";
 import SectionHead from "./components/SectionHead";
+import Estimator from "./components/Estimator";
 import Reveal from "./components/Reveal";
 import { ArrowIcon, WhatsAppIcon } from "./components/Icons";
 
@@ -23,6 +24,43 @@ function MoreLink({ href, children }) {
         {children} <ArrowIcon width="16" height="16" />
       </a>
     </Reveal>
+  );
+}
+
+// Home page banner that leads to the price estimator
+function EstimateTeaser() {
+  return (
+    <section className="section estimate-teaser-wrap">
+      <div className="wrap">
+        <Reveal className="estimate-teaser">
+          <div>
+            <p className="kicker">Price estimator</p>
+            <h2>How much will it cost?</h2>
+            <p>Choose the work, enter a rough size and see an estimated price range in seconds.</p>
+          </div>
+          <ul className="teaser-points">
+            <li>Gates, grills and railings</li>
+            <li>Aluminium windows and doors</li>
+            <li>Glass, shutters, sheds and roofing</li>
+          </ul>
+          <a className="btn btn-primary btn-lg" href="/estimator/">
+            Estimate my price <ArrowIcon width="18" height="18" />
+          </a>
+        </Reveal>
+      </div>
+    </section>
+  );
+}
+
+function EstimatorPage() {
+  return (
+    <>
+      <PageHero title="Price estimator">
+        Get an instant price range for your job. Choose the work, enter the size and pick your options.
+      </PageHero>
+      <Estimator />
+      <Process />
+    </>
   );
 }
 
@@ -38,6 +76,7 @@ function HomePage() {
           <CategoryGrid />
         </div>
       </section>
+      <EstimateTeaser />
       <Process />
       <section className="section">
         <div className="wrap">
@@ -66,6 +105,7 @@ function ServicesPage() {
         options and a quote.
       </PageHero>
       <Services />
+      <ServiceDirectory />
       <Process />
       <CtaBand />
     </>
@@ -158,13 +198,13 @@ function ContactPage({ toast }) {
 
 // Reads ?cat=iron&service=Iron%20Gates so a service's "Get a quote" button can pre-fill the form
 function QuotePage({ toast }) {
-  const [prefill] = useState(() => {
+  const [prefill, setPrefill] = useState(null);
+  useEffect(() => {
     const q = new URLSearchParams(window.location.search);
     const cat = q.get("cat");
     const name = q.get("service");
-    const ok = CATEGORY_BY_KEY[cat]?.items.some(([n]) => n === name);
-    return ok ? { cat, name, nonce: 1 } : null;
-  });
+    if (CATEGORY_BY_KEY[cat]?.items.some(([n]) => n === name)) setPrefill({ cat, name, nonce: 1 });
+  }, []);
 
   return (
     <>
@@ -185,4 +225,5 @@ export const PAGES = {
   faq: FaqPage,
   contact: ContactPage,
   quote: QuotePage,
+  estimator: EstimatorPage,
 };

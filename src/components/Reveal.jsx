@@ -38,7 +38,7 @@ export default function Reveal({ as: Tag = "div", delay = 0, className = "", sty
 export function CountUp({ value, duration = 1400 }) {
   const ref = useRef(null);
   const target = Number(value) || 0;
-  const [n, setN] = useState(0);
+  const [n, setN] = useState(target);
 
   useEffect(() => {
     const el = ref.current;
@@ -47,6 +47,7 @@ export function CountUp({ value, duration = 1400 }) {
     const io = new IntersectionObserver(([e]) => {
       if (!e.isIntersecting) return;
       io.disconnect();
+      setN(0);
       const start = performance.now();
       const tick = (t) => {
         const p = Math.min(1, (t - start) / duration);

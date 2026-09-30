@@ -48,6 +48,9 @@ export default function ServiceModal({ cat, index, onSelect, onClose, onQuote })
               <WhatsAppIcon width="16" height="16" /> Ask on WhatsApp
             </a>
           </div>
+          <a className="est-link" href={`/estimator/?cat=${cat}`}>
+            Estimate the price for this →
+          </a>
 
           {c.items.length > 1 && (
             <div>

@@ -11,7 +11,7 @@ npm run build    # makes the final website in the dist/ folder
 ```
 
 The site has separate pages, each in its own folder:
-`/`, `/services/`, `/projects/`, `/about/`, `/testimonials/`, `/faq/`, `/contact/`, `/quote/`.
+`/`, `/services/`, `/estimator/`, `/projects/`, `/about/`, `/testimonials/`, `/faq/`, `/contact/`, `/quote/`.
 To add a page: copy one of those folders, change `data-page` in its `index.html`, then add it to
 `vite.config.js` and `src/pages.jsx`.
 
@@ -29,6 +29,7 @@ It also works on Netlify, Vercel or Cloudflare Pages: build command `npm run bui
 | Testimonials | `src/data/content.js` → `TESTIMONIALS` |
 | FAQ | `src/data/content.js` → `FAQS` |
 | Order form questions | `src/data/orderForm.js` |
+| Price estimator rates (Rs per sq ft / running ft) | `src/data/pricing.js` |
 | Colours, fonts, spacing | `src/styles/global.css` (top `:root` block: `--brand` navy, `--amber` amber) |
 | Logo | `public/logo-mark.png` (also used as the browser-tab icon) |
 | What each page shows | `src/pages.jsx` |
@@ -62,3 +63,21 @@ src/
     Logo.jsx  SectionHead.jsx  Photo.jsx  Modal.jsx  Icons.jsx
   styles/global.css     all styles
 ```
+
+## SEO (search engines)
+
+`npm run build` pre-renders every page to full HTML (`scripts/prerender.mjs`), so search engines
+see all the text without running JavaScript. It also writes `sitemap.xml` and `robots.txt`.
+
+| What | Where |
+| --- | --- |
+| Page titles and descriptions | `src/data/seo.js` → `PAGE_SEO` |
+| Business details for Google (schema.org) | `src/data/seo.js` → `businessSchema()` (uses `src/config.js`) |
+| Live site address (canonical links, sitemap) | `src/config.js` → `siteUrl` |
+| Your city (added to titles for local search) | `src/config.js` → `city` |
+| Social share image (1200×630) | `public/images/og-image.jpg` |
+
+After going live:
+1. Add the site to Google Search Console and submit `https://<your-site>/sitemap.xml`.
+2. Create or claim your Google Business Profile with the same name, phone and address.
+3. If you connect your own domain, set `siteUrl` to it and redeploy.

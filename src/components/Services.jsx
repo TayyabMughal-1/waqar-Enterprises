@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { CATEGORIES, CATEGORY_BY_KEY } from "../data/services";
 import { quoteLink, servicesLink } from "../utils/links";
 import { CATEGORY_PHOTOS, photoFor } from "../data/photos";
@@ -38,12 +38,44 @@ export function CategoryGrid() {
   );
 }
 
+// Every category and service as plain text: easy to scan, and readable by search engines
+export function ServiceDirectory() {
+  return (
+    <section className="section">
+      <div className="wrap">
+        <Reveal className="sec-head">
+          <p className="kicker">Full service list</p>
+          <h2>All 50 services at a glance</h2>
+        </Reveal>
+        <div className="directory">
+          {CATEGORIES.map((c) => (
+            <Reveal className="directory-group" key={c.key}>
+              <h3>
+                <a href={servicesLink(c.key)}>{c.name}</a>
+              </h3>
+              <ul>
+                {c.items.map(([name, desc]) => (
+                  <li key={name}>
+                    <b>{name}</b>
+                    <span>{desc}</span>
+                  </li>
+                ))}
+              </ul>
+            </Reveal>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
 // Full services browser (Services page). The chosen category is kept in the URL (?cat=iron).
 export default function Services() {
-  const [category, setCat] = useState(() => {
+  const [category, setCat] = useState("all");
+  useEffect(() => {
     const cat = new URLSearchParams(window.location.search).get("cat");
-    return CATEGORY_BY_KEY[cat] ? cat : "all";
-  });
+    if (CATEGORY_BY_KEY[cat]) setCat(cat);
+  }, []);
   const [open, setOpen] = useState(null); // { cat, index }
   const current = CATEGORY_BY_KEY[category];
 

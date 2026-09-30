@@ -4,6 +4,12 @@
 export const CONFIG = {
   companyName: "Waqar Enterprises",
   domain: "waqarsteel.com",
+
+  // SEO: the live address of the site (no trailing slash). Change it when you connect your own domain,
+  // e.g. "https://waqarsteel.com", then redeploy.
+  siteUrl: "https://waqar-enterprises.vercel.app",
+  // Your city, e.g. "Lahore". When set, it is added to page titles and business details for local search.
+  city: "",
   tagline: "Fabrication & Installation",
 
   phone: "+92 301 8472070", // shown on the site

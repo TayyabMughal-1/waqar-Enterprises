@@ -129,7 +129,7 @@ export function Footer() {
           <div>
             <h4>Company</h4>
             <ul>
-              {NAV_LINKS.slice(1).map(([id, href, label]) => (
+              {NAV_LINKS.map(([id, href, label]) => (
                 <li key={id}>
                   <a href={href}>{label}</a>
                 </li>
