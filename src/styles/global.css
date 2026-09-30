@@ -19,19 +19,14 @@
   --on-amber: #00225f;
   --wa: #25d366;
 
-  --art-bg: #f6f8f7;
-  --art-grid: rgba(16, 20, 24, 0.1);
-  --art-line: #00225f;
-  --art-accent: #fba405;
-  --art-label: #9aa1a8;
 
   --shadow-sm: 0 1px 2px rgba(16, 20, 24, 0.05);
   --shadow: 0 2px 6px rgba(16, 20, 24, 0.04), 0 14px 34px -12px rgba(16, 20, 24, 0.16);
   --shadow-lg: 0 30px 70px -20px rgba(16, 20, 24, 0.3);
 
-  --f-display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
-  --f-body: "Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
-  --f-mono: "JetBrains Mono", ui-monospace, Menlo, Consolas, monospace;
+  --f-display: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --f-body: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --f-mono: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
 
   --max: 1180px;
   --r: 14px;
@@ -443,9 +438,9 @@ ol {
 .hero h1 {
   margin-top: 22px;
   font-size: clamp(40px, 6vw, 72px);
-  font-weight: 800;
+  font-weight: 700;
   line-height: 1.02;
-  letter-spacing: -0.035em;
+  letter-spacing: -0.025em;
 }
 .hero h1 .accent {
   color: var(--brand);
@@ -497,7 +492,6 @@ ol {
   border: 6px solid #fff;
   box-shadow: var(--shadow-lg);
 }
-.hero-art .illus,
 .hero-art .photo {
   position: absolute;
   inset: 0;
@@ -524,24 +518,6 @@ ol {
   to {
     transform: translateX(120%);
   }
-}
-.draw {
-  stroke-dasharray: 1;
-  stroke-dashoffset: 1;
-  animation: draw 1.6s var(--ease) forwards;
-}
-.draw.d2 {
-  animation-delay: 0.35s;
-}
-.draw.d3 {
-  animation-delay: 0.8s;
-}
-.draw.d4 {
-  animation-delay: 1.2s;
-}
-.dims {
-  opacity: 0;
-  animation: fade 0.8s ease 1.9s forwards;
 }
 .float-tag {
   position: absolute;
@@ -582,7 +558,7 @@ ol {
 }
 .stat b {
   display: block;
-  font: 800 clamp(32px, 4vw, 44px) / 1 var(--f-display);
+  font: 700 clamp(32px, 4vw, 44px) / 1 var(--f-display);
   letter-spacing: -0.03em;
   color: var(--brand);
 }
@@ -722,8 +698,10 @@ ol {
 .card:hover .card-link svg {
   transform: translateX(4px);
 }
-.illus {
-  display: block;
+.photo-missing {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #eef1f5, #dfe4ea);
 }
 .cover {
   object-fit: cover;
@@ -775,7 +753,7 @@ ol {
 .lightbox-art {
   position: relative;
   min-height: 300px;
-  background: var(--art-bg);
+  background: var(--soft);
 }
 .dialog-art svg,
 .lightbox-art svg,
@@ -883,7 +861,7 @@ ol {
   border-radius: 50%;
   background: var(--amber);
   color: var(--on-amber);
-  font: 800 18px/1 var(--f-display);
+  font: 700 18px/1 var(--f-display);
   transition: transform 0.4s var(--ease);
 }
 .steps li:hover .step-num {
@@ -1684,8 +1662,8 @@ ol {
   margin-top: 14px;
   max-width: 16ch;
   font-size: clamp(36px, 5.4vw, 62px);
-  font-weight: 800;
-  letter-spacing: -0.035em;
+  font-weight: 700;
+  letter-spacing: -0.025em;
   color: var(--brand);
 }
 .page-hero p {
@@ -1968,7 +1946,7 @@ ol {
   }
 }
 
-/* Real photos fill their frame the same way the illustrations do */
+/* Photos fill their frame */
 .card-art > img,
 .dialog-art > img,
 .hero-art > img {

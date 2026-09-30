@@ -1,0 +1,60 @@
+PHOTO CREDITS
+=============
+All photos are from Unsplash (https://unsplash.com) and used under the Unsplash License:
+free for commercial use, no permission or attribution required. Listed here for our records.
+Replace them with photos of your own finished jobs whenever you can.
+
+hero.jpg                      https://images.unsplash.com/photo-1714504904786-b6732390b206
+services/iron.jpg             https://images.unsplash.com/photo-1580047750144-2c7790adf461
+services/wrought.jpg          https://images.unsplash.com/photo-1786588088499-6df3e775f5ef
+services/steel.jpg            https://images.unsplash.com/photo-1605159149559-abaaa7bc476c
+services/aluwin.jpg           https://images.unsplash.com/photo-1784280017604-c7eb21ee002c
+services/aludoor.jpg          https://images.unsplash.com/photo-1764837599929-100bd5890c57
+services/glass.jpg            https://images.unsplash.com/photo-1770048532712-4fde5ef7eb90
+services/shower.jpg           https://images.unsplash.com/photo-1771929662486-f793e08f0f16
+services/shutter.jpg          https://images.unsplash.com/photo-1780342444722-007838190869
+services/grills.jpg           https://images.unsplash.com/photo-1767522248510-d9c2a1117cb9
+services/railing.jpg          https://images.unsplash.com/photo-1758862528822-b0094ae44705
+services/allsteel.jpg         https://images.unsplash.com/photo-1644079446600-219068676743
+services/fiber.jpg            https://images.unsplash.com/photo-1559392681-f384899c1779
+projects/designer-gate.jpg    https://images.unsplash.com/photo-1590869942905-a4ada45d5a8a
+projects/stair-railing.jpg    https://images.unsplash.com/photo-1523789248610-bb592e870951
+projects/store-racking.jpg    https://images.unsplash.com/photo-1749244768351-2726dc23d26c
+
+services/items/wrought-iron-gates.jpg       https://images.unsplash.com/photo-1732528585225-5227d5206863
+services/items/iron-grills.jpg              https://images.unsplash.com/photo-1759375278122-86b29857d299
+services/items/iron-railings.jpg            https://images.unsplash.com/photo-1612311408242-3ad94a8832cd
+services/items/iron-doors.jpg               https://images.unsplash.com/photo-1767552989991-0fac1fe88491
+services/items/iron-staircases.jpg          https://images.unsplash.com/photo-1618446911412-e93bd7f24bf5
+services/items/ms-fabrication.jpg           https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1
+services/items/ss-railings.jpg              https://images.unsplash.com/photo-1599336840830-b80b7f9ade79
+services/items/ss-gates.jpg                 https://images.unsplash.com/photo-1576169510450-fd0392650023
+services/items/ss-doors.jpg                 https://images.unsplash.com/photo-1693142442509-153de25b9f10
+services/items/custom-steel.jpg             https://images.unsplash.com/photo-1508465818649-14a170138405
+services/items/casement-windows.jpg         https://images.unsplash.com/photo-1736593319421-250e17bb2f11
+services/items/fixed-windows.jpg            https://images.unsplash.com/photo-1783125126672-390a6fce4c03
+services/items/tilt-turn-windows.jpg        https://images.unsplash.com/photo-1632800617933-712949cc4d42
+services/items/window-grills-alu.jpg        https://images.unsplash.com/photo-1785053307461-6bc8c036ed25
+services/items/sliding-doors.jpg            https://images.unsplash.com/photo-1702724758750-9ff8d50f02e5
+services/items/folding-doors.jpg            https://images.unsplash.com/photo-1758998256408-ab2c9fbec19b
+services/items/bathroom-doors.jpg           https://images.unsplash.com/photo-1772476361253-90a9be5e0c19
+services/items/partition-doors.jpg          https://images.unsplash.com/photo-1765766600457-abfd14dd502c
+services/items/glass-doors.jpg              https://images.unsplash.com/photo-1565261949232-3fcc78206c0c
+services/items/glass-facade.jpg             https://images.unsplash.com/photo-1523477593243-78bbf626fd3b
+services/items/tempered-glass.jpg           https://images.unsplash.com/photo-1776671183498-72570903b06c
+services/items/rolling-shutters.jpg         https://images.unsplash.com/photo-1484009479330-67a6e7339295
+services/items/garage-shutters.jpg          https://images.unsplash.com/photo-1641612717055-deea47c3e948
+services/items/automatic-shutters.jpg       https://images.unsplash.com/photo-1577451581039-032debfb47b6
+services/items/sliding-gates.jpg            https://images.unsplash.com/photo-1681653205733-633caa85f2e7
+services/items/swing-gates.jpg              https://images.unsplash.com/photo-1625730969972-3ae6b19761d6
+services/items/window-grills.jpg            https://images.unsplash.com/photo-1712666535209-cc8881ffba52
+services/items/door-grills.jpg              https://images.unsplash.com/photo-1722847150282-ec349c9b925b
+services/items/safety-grills.jpg            https://images.unsplash.com/photo-1783785290578-3c1b7f97a4a7
+services/items/decorative-grills.jpg        https://images.unsplash.com/photo-1766428630529-525cd56d165d
+services/items/steel-tables.jpg             https://images.unsplash.com/photo-1773517460073-611de1ff5d1a
+services/items/steel-tanks.jpg              https://images.unsplash.com/photo-1635343978408-c8de4e6ce07f
+services/items/steel-trusses.jpg            https://images.unsplash.com/photo-1724814884431-5f931c9620ae
+services/items/steel-canopies.jpg           https://images.unsplash.com/photo-1582404570682-c167e5b30baf
+services/items/fiber-roofing.jpg            https://images.unsplash.com/photo-1785461467760-c2b563c854a2
+services/items/fiber-sheds.jpg              https://images.unsplash.com/photo-1762339107481-79d2512c646b
+services/items/fiber-doors.jpg              https://images.unsplash.com/photo-1614687959440-859988ca224b

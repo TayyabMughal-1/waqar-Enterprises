@@ -38,7 +38,7 @@ It also works on Netlify, Vercel or Cloudflare Pages: build command `npm run bui
 ### Adding real project photos
 1. Put photos in `public/projects/` (e.g. `public/projects/main-gate.jpg`).
 2. In `src/data/content.js`, add `image: "/projects/main-gate.jpg"` to that project.
-   The illustration is replaced by your photo automatically.
+   Service photos are listed in `src/data/photos.js`.
 
 ### WhatsApp
 Set `whatsapp` in `src/config.js` to the number in international format, digits only
@@ -59,6 +59,6 @@ src/
   components/           one file per section
     Header.jsx  Hero.jsx  Services.jsx  ServiceModal.jsx  Gallery.jsx
     Testimonials.jsx  OrderForm.jsx  Sections.jsx  Contact.jsx
-    Logo.jsx  SectionHead.jsx  Illustration.jsx (placeholder scenes)  Modal.jsx  Icons.jsx
+    Logo.jsx  SectionHead.jsx  Photo.jsx  Modal.jsx  Icons.jsx
   styles/global.css     all styles
 ```

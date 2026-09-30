@@ -79,9 +79,6 @@ function ProjectsPage() {
       <section className="section">
         <div className="wrap">
           <Gallery />
-          <p className="note">
-            Illustrations show the project types we handle. Add real photos in src/data/content.js (the image field).
-          </p>
         </div>
       </section>
       <CtaBand />

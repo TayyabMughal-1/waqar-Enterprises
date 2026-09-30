@@ -31,21 +31,21 @@ export const VALUES = [
   { title: "Installed", text: "We fit what we make, and we come back if anything needs adjusting." },
 ];
 
-// Gallery items: YOUR OWN finished jobs. Add a photo with image: "/images/projects/main-gate.jpg"
-// (put the file in public/images/projects/). Until then an illustration is shown.
+// Gallery items. image: points to a photo in public/images/. These are stock photos
+// (see public/images/CREDITS.txt); replace them with photos of your own finished jobs.
 export const PROJECTS = [
-  { cat: "wrought", title: "Double-leaf main gate", meta: "Wrought iron · black + gold" },
-  { cat: "glass", title: "Frameless shower cabin", meta: "10 mm tempered · chrome" },
-  { cat: "aluwin", title: "3-track sliding windows", meta: "Aluminium · champagne" },
-  { cat: "shutter", title: "Motorised shop shutter", meta: "Galvanised slats · remote" },
-  { cat: "steel", title: "Warehouse portal shed", meta: "MS I-beam · 60 ft span" },
-  { cat: "grills", title: "Balcony safety grill", meta: "12 mm square bar" },
-  { cat: "iron", title: "Stair railing", meta: "MS pipe · enamel" },
-  { cat: "fiber", title: "Car porch shed", meta: "Fiber glass sheet · steel frame" },
-  { cat: "aludoor", title: "Terrace sliding door", meta: "Aluminium · clear glass" },
-  { cat: "allsteel", title: "Store racking", meta: "Angle iron · bolted" },
-  { cat: "glass", title: "Office glass partition", meta: "12 mm tempered · frosted band" },
-  { cat: "wrought", title: "Sliding designer gate", meta: "Laser-cut panel · motor ready" },
+  { cat: "wrought", title: "Double-leaf main gate", meta: "MS gate · brick pillars", image: "/images/services/iron.jpg" },
+  { cat: "glass", title: "Frameless shower cabin", meta: "10 mm tempered · black fittings", image: "/images/services/shower.jpg" },
+  { cat: "aluwin", title: "Sliding windows", meta: "Aluminium · black frame", image: "/images/services/aluwin.jpg" },
+  { cat: "shutter", title: "Rolling shutter", meta: "Galvanised slats", image: "/images/services/shutter.jpg" },
+  { cat: "steel", title: "Steel structure", meta: "MS I-beam frame", image: "/images/services/steel.jpg" },
+  { cat: "grills", title: "Balcony safety grill", meta: "Square bar · white enamel", image: "/images/services/grills.jpg" },
+  { cat: "iron", title: "Stair railing", meta: "MS flat bar · black enamel", image: "/images/projects/stair-railing.jpg" },
+  { cat: "fiber", title: "Translucent roof canopy", meta: "Fiber glass sheet · steel frame", image: "/images/services/fiber.jpg" },
+  { cat: "aludoor", title: "Terrace glass doors", meta: "Aluminium · black frame", image: "/images/services/aludoor.jpg" },
+  { cat: "allsteel", title: "Warehouse racking", meta: "Pallet racking · bolted steel", image: "/images/projects/store-racking.jpg" },
+  { cat: "glass", title: "Office glass partition", meta: "Tempered glass · black grid frame", image: "/images/services/glass.jpg" },
+  { cat: "wrought", title: "Designer gate", meta: "Ornate scrollwork · black finish", image: "/images/projects/designer-gate.jpg" },
 ];
 
 export const GALLERY_FILTERS = [

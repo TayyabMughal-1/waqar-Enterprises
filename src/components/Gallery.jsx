@@ -1,14 +1,15 @@
 import { useCallback, useMemo, useState } from "react";
 import { GALLERY_FILTERS, PROJECTS } from "../data/content";
-import { sceneFor } from "./Illustration";
+import { CATEGORY_PHOTOS } from "../data/photos";
 import Photo from "./Photo";
 import Modal, { CloseButton } from "./Modal";
 import Reveal from "./Reveal";
 import { ArrowIcon, ArrowLeftIcon } from "./Icons";
 
-// Your own job photo (the project image field); the illustration shows until one is added
+// The project's photo (image field), or its category photo if it has none
 function Picture({ item }) {
-  return <Photo key={item.image} src={item.image} alt={item.title} kind={sceneFor(item.cat, item.title)} />;
+  const src = item.image || CATEGORY_PHOTOS[item.cat];
+  return <Photo key={src} src={src} alt={item.title} />;
 }
 
 // Project grid with lightbox. `limit` shows only the first N projects and hides the filters (Home page).

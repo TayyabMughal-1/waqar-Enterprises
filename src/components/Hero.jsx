@@ -38,10 +38,10 @@ export default function Hero() {
         </div>
 
         <div className="hero-art anim-fade" aria-hidden="true">
-          <Photo src="/images/hero.jpg" alt="" kind="wrought" />
+          <Photo src="/images/hero.jpg" alt="Welder cutting steel box section in the workshop" />
           <div className="float-tag">
-            <b>Made to your size</b>
-            <span>W 3600 × H 2400 mm</span>
+            <b>Our own workshop</b>
+            <span>Cut · Weld · Finish · Install</span>
           </div>
         </div>
       </div>

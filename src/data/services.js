@@ -1,5 +1,5 @@
 // 10 categories, 50 services (from the proposal's website architecture).
-// key   – short id, also picks the illustration in Illustration.jsx
+// key   – short id (photos for each service are set in data/photos.js)
 // spec  – "Typical options" shown in the service popup
 // items – [service name, one-line description]
 

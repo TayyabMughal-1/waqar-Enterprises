@@ -1,8 +1,8 @@
 import { useCallback } from "react";
 import { CATEGORY_BY_KEY } from "../data/services";
 import { whatsappLink } from "../utils/links";
-import { sceneFor } from "./Illustration";
-import Photo, { scenePhoto } from "./Photo";
+import { photoFor } from "../data/photos";
+import Photo from "./Photo";
 import Modal, { CloseButton } from "./Modal";
 import { ArrowIcon, CheckIcon, WhatsAppIcon } from "./Icons";
 
@@ -16,7 +16,7 @@ export default function ServiceModal({ cat, index, onSelect, onClose, onQuote })
       <div className="dialog" role="dialog" aria-modal="true" aria-label={name}>
         <CloseButton onClick={close} />
         <div className="dialog-art">
-          <Photo key={name} src={scenePhoto(sceneFor(cat, name))} alt={name} kind={sceneFor(cat, name)} />
+          <Photo key={name} src={photoFor(cat, name)} alt={name} />
         </div>
         <div className="dialog-body">
           <p className="mono accent-text">{c.name}</p>

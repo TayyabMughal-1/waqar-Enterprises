@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { CATEGORIES, CATEGORY_BY_KEY } from "../data/services";
 import { quoteLink, servicesLink } from "../utils/links";
-import { sceneFor } from "./Illustration";
-import Photo, { scenePhoto } from "./Photo";
+import { CATEGORY_PHOTOS, photoFor } from "../data/photos";
+import Photo from "./Photo";
 import Reveal from "./Reveal";
 import { ArrowIcon } from "./Icons";
 import ServiceModal from "./ServiceModal";
@@ -12,7 +12,7 @@ function CategoryCard({ c, onClick, href }) {
   return (
     <Tag className="card" href={href} onClick={onClick}>
       <span className="card-art">
-        <Photo src={scenePhoto(c.key)} alt={c.name} kind={c.key} />
+        <Photo src={CATEGORY_PHOTOS[c.key]} alt={c.name} />
       </span>
       <span className="card-body">
         <b>{c.name}</b>
@@ -85,7 +85,7 @@ export default function Services() {
                 <Reveal key={name} delay={(index % 3) * 90}>
                   <button className="card" onClick={() => setOpen({ cat: current.key, index })}>
                     <span className="card-art">
-                      <Photo src={scenePhoto(sceneFor(current.key, name))} alt={name} kind={sceneFor(current.key, name)} />
+                      <Photo src={photoFor(current.key, name)} alt={name} />
                     </span>
                     <span className="card-body">
                       <b>{name}</b>
