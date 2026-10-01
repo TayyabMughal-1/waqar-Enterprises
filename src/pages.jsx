@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { CONFIG } from "./config";
 import { CATEGORY_BY_KEY } from "./data/services";
 import { whatsappLink } from "./utils/links";
-import { CtaBand, PageHero } from "./components/Layout";
+import { CtaBand, PageHero, Statement } from "./components/Layout";
 import Hero from "./components/Hero";
 import Services, { CategoryGrid, ServiceDirectory } from "./components/Services";
 import Gallery from "./components/Gallery";
@@ -68,6 +68,10 @@ function HomePage() {
   return (
     <>
       <Hero />
+      <Statement label="[ Why Waqar Enterprises ]">
+        Measuring, cutting, welding and fitting should not be your headache. We handle the whole job, so you only
+        decide the design, the size and the finish.
+      </Statement>
       <section className="section">
         <div className="wrap">
           <SectionHead kicker="Our services" title="Everything in metal and glass">
@@ -92,6 +96,7 @@ function HomePage() {
           <MoreLink href="/testimonials/">Read all reviews</MoreLink>
         </div>
       </section>
+      <Audiences />
       <CtaBand />
     </>
   );

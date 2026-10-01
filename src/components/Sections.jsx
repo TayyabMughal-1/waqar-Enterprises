@@ -4,6 +4,7 @@ import { AUDIENCES, FAQS, PROCESS, VALUES } from "../data/content";
 import Reveal from "./Reveal";
 import SectionHead from "./SectionHead";
 import { CheckIcon, PlusIcon } from "./Icons";
+import Photo from "./Photo";
 
 export function Process() {
   return (
@@ -61,14 +62,25 @@ export function Audiences() {
     <section className="section">
       <div className="wrap">
         <SectionHead kicker="Who we work for" title="From homes to warehouses" />
-        <div className="aud-grid">
-          {AUDIENCES.map((a, i) => (
-            <Reveal className="aud" key={a.tag} delay={(i % 5) * 80}>
-              <span className="aud-tag">{a.tag}</span>
-              <h3>{a.title}</h3>
-              <p>{a.text}</p>
-            </Reveal>
-          ))}
+        <div className="aud-split">
+          <Reveal className="aud-photo">
+            <Photo src="/images/services/items/steel-structures.jpg" alt="Steel structure under construction" />
+          </Reveal>
+          <div className="aud-list">
+            {AUDIENCES.map((a, i) => (
+              <details key={a.tag} open={i === 0}>
+                <summary>
+                  <span className="mono">[{String(i + 1).padStart(2, "0")}]</span>
+                  {a.tag}
+                  <PlusIcon width="18" height="18" />
+                </summary>
+                <div>
+                  <b>{a.title}</b>
+                  <p>{a.text}</p>
+                </div>
+              </details>
+            ))}
+          </div>
         </div>
       </div>
     </section>
