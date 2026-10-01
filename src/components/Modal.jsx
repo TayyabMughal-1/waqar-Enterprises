@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import { createPortal } from "react-dom";
 
 // Full-screen overlay. Closes on Escape, backdrop click or the × button.
 // `onKey` receives other key presses (used for arrow keys in the lightbox).
@@ -23,10 +24,11 @@ export default function Modal({ onClose, onKey, children }) {
     };
   }, []);
 
-  return (
+  return createPortal(
     <div className="overlay" ref={ref} onClick={(e) => e.target === e.currentTarget && onClose()}>
       {children}
-    </div>
+    </div>,
+    document.body
   );
 }
 

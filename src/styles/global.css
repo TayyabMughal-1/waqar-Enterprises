@@ -491,8 +491,7 @@ ol {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: grayscale(1) contrast(1.12) brightness(1.04);
-  mix-blend-mode: multiply;
+  filter: none;
   animation: heroIn 1.8s var(--ease) both;
 }
 @keyframes heroIn {
@@ -1226,7 +1225,7 @@ ol {
 .overlay {
   position: fixed;
   inset: 0;
-  z-index: 100;
+  z-index: 200;
   display: grid;
   place-items: center;
   padding: 20px;
@@ -1247,6 +1246,12 @@ ol {
 .dialog {
   display: grid;
   grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+  max-height: calc(100vh - 40px);
+  max-height: calc(100dvh - 40px);
+}
+.dialog-body {
+  overflow-y: auto;
+  overscroll-behavior: contain;
 }
 .dialog-art,
 .lightbox-art {
@@ -1315,7 +1320,7 @@ ol {
   position: absolute;
   top: -1px;
   right: -1px;
-  z-index: 2;
+  z-index: 5;
   width: 44px;
   height: 44px;
   display: grid;
@@ -2149,6 +2154,7 @@ ol {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  filter: none;
 }
 .est-photo::after {
   content: "";
@@ -2611,5 +2617,66 @@ ol {
   .footer-top > div + div {
     border-left: 0;
     border-top: 1px solid var(--line-strong);
+  }
+}
+
+/* Hero WhatsApp button */
+.hero-wa {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  align-self: flex-start;
+  padding: 10px 16px 10px 10px;
+  border: 1px solid var(--ink);
+  background: var(--paper-3);
+  text-decoration: none;
+  color: var(--ink);
+  transition: background 0.25s, color 0.25s, border-color 0.25s;
+}
+.hero-wa-icon {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  background: var(--wa);
+  color: #06301a;
+}
+.hero-wa-text {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.hero-wa-text small {
+  font: 500 10.5px/1 var(--f-mono);
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.hero-wa-text b {
+  font: 700 17px/1 var(--f-display);
+  letter-spacing: -0.01em;
+}
+.hero-wa > svg {
+  margin-left: 6px;
+  transition: transform 0.3s var(--ease);
+}
+.hero-wa:hover {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--paper);
+}
+.hero-wa:hover .hero-wa-text small {
+  color: rgba(242, 241, 236, 0.7);
+}
+.hero-wa:hover > svg {
+  transform: translateX(4px);
+}
+
+@media (max-width: 760px) {
+  .dialog {
+    max-height: none;
+  }
+  .overlay {
+    place-items: start center;
   }
 }

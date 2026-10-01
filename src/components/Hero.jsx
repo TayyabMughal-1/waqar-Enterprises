@@ -45,8 +45,15 @@ export default function Hero() {
             We design, fabricate and install iron, steel, aluminium, glass and fiber glass work for homes, shops and
             factories. Send us your size and style, and we send you a clear written quotation.
           </p>
-          <a className="text-link" href={whatsappLink(CONFIG.whatsappGreeting)} target="_blank" rel="noopener">
-            <WhatsAppIcon width="14" height="14" /> WhatsApp {CONFIG.whatsappLabel}
+          <a className="hero-wa" href={whatsappLink(CONFIG.whatsappGreeting)} target="_blank" rel="noopener">
+            <span className="hero-wa-icon">
+              <WhatsAppIcon width="22" height="22" />
+            </span>
+            <span className="hero-wa-text">
+              <small>Chat on WhatsApp</small>
+              <b>{CONFIG.whatsappLabel}</b>
+            </span>
+            <ArrowIcon width="16" height="16" />
           </a>
         </div>
         <a className="hero-bar-cta anim-up" style={{ animationDelay: "220ms" }} href="/quote/">
