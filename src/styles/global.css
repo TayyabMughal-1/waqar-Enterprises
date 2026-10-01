@@ -562,8 +562,8 @@ ol {
 .hero-bar-text {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  gap: 14px;
+  justify-content: center;
+  gap: 20px;
   padding: 20px 22px;
   border-left: 1px solid var(--line-strong);
   font-size: 14px;
